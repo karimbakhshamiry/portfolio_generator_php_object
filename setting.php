@@ -1,6 +1,8 @@
 <?php
     include_once('core_functions.php');
-   handleNotLoggedIn();
+    if (!$_SESSION['authenticated']) {
+        header('location: login.php');
+    }
 ?>
 
 <!DOCTYPE html>

@@ -1,5 +1,10 @@
 <?php
     include_once('core_functions.php');
+
+    if (!$_SESSION['authenticated']) {
+        header('location: login.php');
+    }
+
     $firstName = $_POST['firstname'];
     $lastName = $_POST['lastname'];
     $country = $_POST['country'];

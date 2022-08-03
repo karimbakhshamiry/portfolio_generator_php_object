@@ -1,6 +1,7 @@
 <?php
     include_once('core_functions.php');
-    handleNotLoggedIn();
+    $_SESSION['user']->handleNotLoggedIn();
+    var_dump($_SESSION)
 ?>
 
 <!DOCTYPE html>
@@ -100,5 +101,5 @@
 </html>
 
 <?php
-    echo gettype('hey')
+    var_dump($_SESSION)
 ?>

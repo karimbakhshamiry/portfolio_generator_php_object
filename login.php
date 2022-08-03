@@ -1,6 +1,7 @@
 <?php
     include_once('core_functions.php');
-    if (isLoggedIn()) {
+    $user = new User();
+    if ($_SESSION['authenticated']) {
         header('index.php');
     }
 
@@ -13,9 +14,8 @@
     ];
 
     if (isset($_POST['username']) && isset($_POST['password'])){
-        if ($_POST['username'] == user['username'] && $_POST['password'] == user['password']) {
-            $_SESSION['authenticated'] = true;
-            $_SESSION['user'] = user['name'];
+        if ($user->authenticate($_POST['username'], $_POST['password'])) {
+            $_SESSION['user'] = $user;
             header('location: index.php');
         } else {
             $message = 'wrong username or password';

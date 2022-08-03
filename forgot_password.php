@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    if ($_SESSION['authenticated']) {
+        header('location: index.php');
+    }
     $message = '';
     if (isset($_POST['email'])) {
         $email = $_POST["email"];
