@@ -1,5 +1,7 @@
-#This project takes a series of information and generates a simple portfolio for with the provided information. It uses object instead of functions.
+# This project takes a series of information and generates a simple portfolio for with the provided information. It uses object instead of functions
+
 It has the following pages, and features.
+
 1. index, login, logout, forgot password, setting, and a portfolio summary page.
 2. There is not database in this project, so the information that was meant to be stored and fetched from database are hardcoded and stored in variables.
 3. For the poject to look a liiiitle real, there is only user created with the username 'admin@gmail.com' and password of 'password'.
