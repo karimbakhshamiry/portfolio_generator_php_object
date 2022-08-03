@@ -1,7 +1,6 @@
 <?php
     include_once('core_functions.php');
     $_SESSION['user']->handleNotLoggedIn();
-    var_dump($_SESSION)
 ?>
 
 <!DOCTYPE html>
@@ -99,7 +98,3 @@
     <script src="./assets/js/index.js"></script>
 </body>
 </html>
-
-<?php
-    var_dump($_SESSION)
-?>
