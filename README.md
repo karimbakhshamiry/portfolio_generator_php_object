@@ -1,4 +1,4 @@
-# This project takes a series of information and generates a simple portfolio for with the provided information. It uses object instead of functions
+# This project takes a series of information and generates a simple portfolio for with the provided information. It is object based
 
 It has the following pages, and features.
 
